@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #08070b;
+  color: #fff;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.w-5.h-5 {
+  display: none;
+}
+
+.w-5.h-5 + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.w-5.h-5 + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.w-5.h-5:checked + label::before {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Crect width="20" height="20" fill="%23A4FFAF"/%3E%3Cpath d="M4 10.6066L7.39341 14L15.3934 6" stroke="%2318171F" stroke-width="3"/%3E%3C/svg%3E');
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: #ddd; /* Default track color */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007BFF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: -7px; 
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #00FF00;  /* The green color */
+  border-radius: 3px;
+}
