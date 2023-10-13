@@ -35,7 +35,6 @@ body {
 
 .w-5.h-5:checked + label::before {
   background-image: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Crect width="20" height="20" fill="%23A4FFAF"/%3E%3Cpath d="M4 10.6066L7.39341 14L15.3934 6" stroke="%2318171F" stroke-width="3"/%3E%3C/svg%3E');
-  background-color: transparent;
   border: none;
   box-shadow: none;
 }
@@ -44,23 +43,29 @@ input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  background: #ddd; /* Default track color */
+  background: #18171f;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #007BFF;
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s;
-  margin-top: -7px; 
+  margin-top: -10px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
-  background: #00FF00;  /* The green color */
   border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    green 0%,
+    green 0%,
+    #18171f 0%,
+    #18171f 100%
+  );
 }
