@@ -16,9 +16,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./src/assets/images/Screenshot.png)
 
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://password-generator-513rg01lq-azammustafa66.vercel.app/)
 
 ### Built with
 
